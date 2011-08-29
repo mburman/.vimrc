@@ -8,6 +8,9 @@
 " detect type of file
 filetype on
 
+" don't make noise on error messages
+set noerrorbells
+
 """""""""""""""""
 " Colors
 """""""""""""""""
@@ -19,10 +22,13 @@ syntax on
 """""""""""""""""
 
 " make backup
-"set backup
+set backup
 
 " where to put the backup 
-"set backupdir=./
+set backupdir=~/.backup
+
+" tell vim where to put the swp files
+set dir=~/.tmp
 
 """"""""""""""""
 " Visual Cues
@@ -36,6 +42,13 @@ set matchtime=5
 
 " don't blink
 set novisualbell
+
+" always show status line
+set laststatus=2
+
+" highlights the background in a subtle red for text that goes over 80 columns
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 """"""""""""""""
 " Search
@@ -76,7 +89,7 @@ set shiftwidth=4
 set autoindent
 
 " wrap long lines
-set nowrap
+set wrap
 
 " let backspace delete indent
 set tabstop=4
