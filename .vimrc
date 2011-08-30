@@ -1,16 +1,17 @@
-" .vimrc
+"""" .vimrc
 " Author: Manish Burman
 
 """""""""""""""""
 " General 
 """""""""""""""""
-
+"
 " detect type of file
-filetype on
-
+" filetype on
+"
 " don't make noise on error messages
 set noerrorbells
 
+set runtimepath+=$HOME/.vim/
 """""""""""""""""
 " Colors
 """""""""""""""""
