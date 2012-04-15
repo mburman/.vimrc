@@ -12,10 +12,15 @@
 set noerrorbells
 
 set runtimepath+=$HOME/.vim/
+
+vmap <C-c> :w! ~/.vbuf<CR> 
+nmap <C-c> :.w! ~/.vbuf<CR>
+nmap <C-v> :r ~/.vbuf<CR>
+
 """""""""""""""""
 " Colors
 """""""""""""""""
-
+colors desert256
 syntax on
 
 """""""""""""""""
@@ -48,8 +53,8 @@ set novisualbell
 set laststatus=2
 
 " highlights the background in a subtle red for text that goes over 80 columns
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%81v.\+/
 
 """"""""""""""""
 " Search
@@ -110,8 +115,9 @@ set selectmode=mouse
 " keep 500 lines of history
 set history=500
 
+set clipboard=unnamed
 "automatically enable mouse usage
-set mouse=a
+set mouse=r
 
 "spell check on
 " set spell
