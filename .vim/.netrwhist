@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/mburman/Sites/dvwa/config'
+let g:netrw_dirhist_2='/Users/mburman/Google Drive/research/kayvon/renderer'
+let g:netrw_dirhist_3='/Users/mburman/Google Drive/Classes/18-349/~embedded/lab3/tasks'
+let g:netrw_dirhist_4='/Users/mburman/Google Drive/Classes/18-349/~embedded/lab3'
+let g:netrw_dirhist_5='/Users/mburman/Google Drive/Classes/18-349/~embedded'
+let g:netrw_dirhist_6='/Users/mburman'
